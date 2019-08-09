@@ -1,0 +1,2 @@
+# PyShelly
+A python shell
