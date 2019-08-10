@@ -18,6 +18,7 @@ def Dirlist():      #Listing files in a directory
     while(i<len(sortlist)):
         print(sortlist[i]+'\n')
         i+=1
+        
 
 def Move():        #For moving or renameing file
     path1=input('Enter the location of File to move or rename:')
@@ -63,25 +64,14 @@ delete (delete files)
 
 listDir (list files in a directory)
 
-cowsay (a funny command)
+bash (use bash shell) (if supported)
+
+sh (use sh shell) (if supported)
+
+python3 (open a python3 shell)
 
 exit (exit this shell)
 ''')
-
-def CowSay():
-    print('''
-
-  ________________________________________
-/ moo... munch, munch.                    \
-                                         
- ----------------------------------------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                
-                ||     ||
-''')
-
 
 while True:
     ans = input('''
@@ -95,9 +85,6 @@ $ ''')
         
     if ans == 'exit':
         exit()
-
-    if ans == 'cowsay':
-        CowSay()
         
     if ans == 'move':
         Move()
@@ -108,7 +95,7 @@ $ ''')
     if ans == 'delete':
         Delete()
 
-    if ans == 'listDir':
+    if ans == 'Dirlist':
         Dirlist()
 
     if ans == 'makedir':
@@ -116,6 +103,12 @@ $ ''')
 
     if ans == 'removedir':
         Removedir()
-        
-        
-        
+
+    if ans == 'bash':
+        os.system("bash")
+
+    if ans == 'sh':
+        os.system("sh")
+
+    if ans == 'python3':
+        os.system("python3")
