@@ -1,2 +1,2 @@
 # PyShelly
-A python shell
+An alternative to BASH and SH.
