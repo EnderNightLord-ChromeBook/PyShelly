@@ -1,15 +1,17 @@
 # Camden Bruce
+# Noah Cain
 import os
 import shutil
+import /system/zircon.py
 
 def Delete():          #Deleting a File
-    path=input("Enter the location of file to be write or create:")
+    path=input("Enter the location of file to be written or created")
     if os.path.exists(path):      # checks if the file exists
         print('File Found')     #For existing file
         os.remove(path)          #os.remove(file path) is used to delete
         print('File has been deleted')
     else:
-        print('File Does\'nt exist')    #Is no file exist
+        print('File Does not exist')    #Is no file exist
 
 def Dirlist():      #Listing files in a directory
     path=input("Enter the Directory location to list:")
@@ -117,3 +119,6 @@ $ ''')
 
     if ans == 'pm':
         os.system("pm")
+
+ if ans == 'fxutils':
+        os.system("fxutils")
