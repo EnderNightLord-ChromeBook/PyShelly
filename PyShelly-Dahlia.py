@@ -64,7 +64,7 @@ copy (copy files)
 
 delete (delete files)
 
-listDir (list files in a directory)
+Dirlist (list files in a directory)
 
 bash (use bash shell) (if supported)
 
@@ -120,5 +120,5 @@ $ ''')
     if ans == 'pm':
         os.system("pm")
 
- if ans == 'fxutils':
+    if ans == 'fxutils':
         os.system("fxutils")
