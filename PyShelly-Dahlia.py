@@ -2,7 +2,7 @@
 # Noah Cain
 import os
 import shutil
-import /system/zircon.py
+# import /system/zircon.py
 
 def Delete():          #Deleting a File
     path=input("Enter the location of file to be written or created")
