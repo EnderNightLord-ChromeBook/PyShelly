@@ -117,8 +117,11 @@ $ ''')
     if ans == 'python3':
         os.system("python3")
 
-    if ans == 'pm':
-        os.system("pm")
+    if ans == 'pm reboot':
+        os.system("pm reboot")
 
     if ans == 'fxutils':
         os.system("fxutils")
+        
+    if ans == 'pm shutdown':
+        os.system("pm shutdown")
